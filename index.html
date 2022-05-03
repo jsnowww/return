@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit MDD Label Maker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+  <div class="item">
+      <form autocomplete="off" id="myForm">
+        <table style="undefined;table-layout: fixed; width: 420px">
+          <colgroup>
+          <col style="width: 320px">
+          <col style="width: 80px">
+          </colgroup>
+          <tbody>
+            <tr>
+              <td colspan="2"><input id="sku" type="text" name="sku" size="30" placeholder="KT or SKU Name" class="input" required></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input id="lot" type="text" name="lot" size="30" placeholder="LOT number" class="input"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="text" name="box" size="30" class="input" placeholder="Kit Box Name" id="box"> </td>
+            </tr>
+            <tr>
+              <td colspan="2"><select name="assembler" id="assembler" class="input"></span> 
+                  <option value="">Assembled By</option>
+                  <option value="Assembled by Sirane, Stafford Park 6, Telford TF3 3A">Sirane</option>
+                  <option value="Assembed by MedDX Services Ltd, Unit 2, Newtons Court, Crossways Businss Park, Dartford, Kent, DA2 6QL">Meddx (Dartford)</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td colspan="2"><select name="office" id="office" class="input"></span> 
+                  <option value="">Office Address</option>
+                  <option value="Thriva Limited, 6th Floor Classic House, 174-180 Old Street, London, EC1V 9BP">Old Street</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="text" name="ifu" size="30" placeholder="Instructions/IFU Name" class="input" id="ifu" required></td>
+            </tr>
+            <tr>
+              <td colspan="2">        <select name="ce" id="ce" class="input">
+                  <option value="">CE Marked?</option>
+                  <option value="addce">Yes</option>
+                  <option value="">No</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td colspan="2"><select name ="return-lab" id="returnlab">
+                  <option value="">Return Lab</option>
+                  <option value="County Pathology prepaid UN3373 C5 mailer">County Pathology prepaid UN3373 C5 mailer</option>
+                  <option value="Inuvi prepaid UN3373 C5 mailer">Inuvi prepaid UN3373 C5 mailer</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td colspan="2"><select name ="return-form" id="returnform">
+                  <option value="">Return Form</option>
+                  <option value="Thriva return form">Thriva Return Form</option>
+                  <option value="Return form with adhesive labels">Return form with adhesive labels</option>
+                  <option value="Venous return form with adhesive labels">Venous return form with adhesive labels</option>
+                  <option value="Anonymous RM1169 return form with adhesive labels">Anonymous RM1169 return form with adhesive labels</option>
+                  <option value="Anonymous RM1170 venous return form with 3x adhesive labels">Anonymous RM1170 venous return form with 3x adhesive labels</option>
+                
+                
+                </select></td>
+            </tr>
+            <tr>
+              <td><input type="date" id="expiry" name="expiry"
+                value="2023-01-01"
+                min="2022-01-01" max="2030-12-31"></td>
+              <td>Quantity</td>
+            </tr>
+            <tr>
+              <td><select name="plasters" id="plasters">
+                  <option value="">Plaster Name</option>
+                  <option value="Aero Healthcare plasters ACP203 (CE1639)  ">Aero Healthcare Circle</option>
+                  <option value="Nantong City YOJO Medical Products plasters (CE0197)">Thrivaling Plasters</option>
+                </select></td>
+              <td><select name="plastersQty" id="plastersQty">
+                  <option value="">Qty</option>
+                  <option value="x1">x1</option>
+                  <option value=x2">x2</option>
+                  <option value="x3">x3</option>
+                  <option value=x4">x4</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><select name="lancets" id="prick" class="input">
+                  <option value="">Lancet Name</option>
+                  <option value="BD contact activated lancet 366594 (CE0050)">BD contact activated lancet 366594 (CE0050)</option>
+                  <option value="Haemolance Plus CE 0344">Haemolance Plus CE 0344</option>
+                </select></td>
+              <td><select name="lancetsQty" id="lancetsQty">
+                  <option value="">Qty</option>
+                  <option value="x1">x1</option>
+                  <option value=x2">x2</option>
+                  <option value="x3">x3</option>
+                  <option value=x4">x4</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><select name ="awipe" id="awipe">
+                  <option value="">Alcohol Wipe</option>
+                  <option value="Aero Healthcare alcohol wipe AW7100 (CE)">Aero Healthcare alcohol wipe AW7100 (CE) </option>
+                </select></td>
+              <td><select name="awipeQty" id="awipeQty">
+                  <option value="">Qty</option>
+                  <option value="x1">x1</option>
+                  <option value=x2">x2</option>
+                  <option value="x3">x3</option>
+                  <option value=x4">x4</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><select name ="wipe" id="wipe">
+                  <option value="">Wipe</option>
+                  <option value="Aero Healthcare cleansing wipe AW6100 (CE1639)">Aero Healthcare cleansing wipe AW6100 (CE1639)</option>
+                </select></td>
+              <td><select name="wipeQty" id="wipeQty">
+                  <option value="">Qty</option>
+                  <option value="x1">x1</option>
+                  <option value=x2">x2</option>
+                  <option value="x3">x3</option>
+                  <option value=x4">x4</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><select name ="tube1" id="tube1">
+                  <option value="">Tube #1</option>
+                  <option value="BD Microtainer SST Gold 365968 (CE0050)">BD Microtainer SST Gold 365968 (CE0050)</option>
+                  <option value="BD Microtainer EDTA Purple 365975 (CE0050)">BD Microtainer EDTA Purple 365975 (CE0050) </option>
+                  <option value="Gold & Purple">Gold & Purple</option>
+                </select></td>
+              <td><select name="tube1Qty" id="tube1Qty">
+                  <option value="">Qty</option>
+                  <option value="x1">x1</option>
+                  <option value=x2">x2</option>
+                  <option value="x3">x3</option>
+                  <option value=x4">x4</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><select name ="tube2" id="tube2">
+                  <option value="">(no 2nd tube required)</option>
+                  <option value="BD Microtainer SST Gold 365968 (CE0050)">BD Microtainer SST Gold 365968 (CE0050)</option>
+                  <option value="BD Microtainer EDTA Purple 365975 (CE0050)">BD Microtainer EDTA Purple 365975 (CE0050) </option>
+                  <option value="Gold & Purple">Gold & Purple</option>
+                </select></td>
+              <td><select name="tube2Qty" id="tube2Qty">
+                  <option value="">Qty</option>
+                  <option value="x1">x1</option>
+                  <option value=x2">x2</option>
+                  <option value="x3">x3</option>
+                  <option value=x4">x4</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><select name ="tubeves" id="tubeves">
+                  <option value="">Tube Container</option>
+                  <option value="MedDX tube casing TH068 Clamshell">MedDX tube casing TH068 Clamshell</option>
+                  <option value="MedDX tube casing - single">MedDX tube casing - single</option>
+                  <option value="MedDX tube casing - double">MedDX tube casing - double</option>
+                
+                
+                </select></td>
+              <td> <select name="tubeves" id="tubevesQty">
+                  <option value="">Qty</option>
+                  <option value="x1">x1</option>
+                  <option value=x2">x2</option>
+                  <option value="x3">x3</option>
+                  <option value=x4">x4</option>
+                </select>
+            </tr>
+          </tbody>
+          </table>
+
+
+
+
+
+
+
+<input type="submit" value="submit" class="button-6" />
+
+</form>
+
+</div>
+<div class="item">
+
+ <canvas id="myCanvas" width="800" height="370"></canvas>
+
+
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var context = canvas.getContext("2d");
+  var imageObj = new Image();
+  var ceimg =  new Image();
+  var dwn = document.getElementById('btndownload');
+
+  imageObj.onload = function()
+  {
+  }  
+
+  imageObj.src = "./blank.png"; 
+  ceimg.src = "./ce.png";
+
+  var myForm = document.getElementById('myForm');
+  myForm.addEventListener('submit', function(e)
+    {      context.drawImage(imageObj, 0, 0);
+
+    //list values in the form here
+      var sku = document.getElementById('sku').value;
+      var wipe = document.getElementById('wipe').value;
+      var box = document.getElementById('box').value;
+      var prick = document.getElementById('prick').value;
+      var ifu = document.getElementById('ifu').value;
+      var plasters = document.getElementById('plasters').value;
+      var awipe = document.getElementById('awipe').value;
+      var returnlab = document.getElementById('returnlab').value;
+      var returnform = document.getElementById('returnform').value;
+      var tube1 = document.getElementById('tube1').value;
+      var tube2 = document.getElementById('tube2').value;
+      var tubeves = document.getElementById('tubeves').value;
+      var office = document.getElementById('office').value;
+      var assembler = document.getElementById('assembler').value;
+      var ce = document.getElementById('ce').value;
+      var expiry = document.getElementById('expiry').value;
+      var lot = document.getElementById('lot').value;
+      var plastersQty = document.getElementById('plastersQty').value;
+      var lancetsQty = document.getElementById('lancetsQty').value;
+      var awipeQty = document.getElementById('awipeQty').value;
+      var wipeQty = document.getElementById('wipeQty').value;
+
+
+
+
+      
+
+
+
+
+
+//
+
+      if(sku.lenght == 0)
+      {
+           alert("you forgot to put something");
+      }
+//add values from above with font choices
+      context.font = "14pt Arial";
+      context.fillText(sku, 480, 55);
+      context.font = "bold 14pt Arial";
+      context.fillText(lot, 480, 85);
+      context.fillText(expiry, 480, 115);
+      context.font = "bold 11pt Arial";
+      context.fillText(sku, 7, 58);
+      context.font = "lighter 10pt Arial";
+      context.fillText(box, 6, 81);
+      context.fillText(prick, 6, 101);
+      context.fillText(ifu, 6, 121);
+      context.fillText(plasters, 6, 141);
+      context.fillText(awipe, 6, 161);
+      context.fillText(wipe, 6, 181);
+      context.fillText(returnlab, 6, 202);
+      context.fillText(returnform, 6, 222);
+      context.fillText(tube1, 6, 244);
+      context.fillText(tube2, 6, 264);
+
+      if(tube2.length == 0) {
+        context.fillText(tubeves, 6, 264);
+        context.font = "bold 11pt Arial";
+        context.fillStyle = "white";
+        context.fillText("████████████████████████████████████████",2,292)}
+
+         else if(tube2.length >= 1) 
+         {
+          context.font = "lighter 10pt Arial";
+          context.fillStyle = "black";
+           context.fillText(tubeves, 6, 284);
+         }
+         context.font = "lighter 8pt Arial";
+         context.fillStyle = "black";
+      context.fillText(office, 35, 330);
+      context.fillText(assembler, 35, 345);
+      if(ce.length >= 3) {
+    context.drawImage(ceimg, 430, 203);
+  }
+
+         e.preventDefault();
+
+         
+
+  });
+
+
+    
+  </script>
+  </div>
+</div>
+</body>
+</html>
