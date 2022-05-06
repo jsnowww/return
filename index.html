@@ -18,47 +18,47 @@
           </colgroup>
           <tbody>
             <tr>
-              <td colspan="2"><input id="sku" type="text" name="sku" size="30" placeholder="KT or SKU Name" class="input" required></td>
+              <td colspan="2"><label>SKU/Kit name</label><input id="sku" type="text" name="sku" size="30" placeholder="KT or SKU Name" class="input"></td>
             </tr>
             <tr>
-              <td colspan="2"><input id="lot" type="text" name="lot" size="30" placeholder="LOT number" class="input"></td>
+              <td colspan="2"><label>LOT Number</label><input id="lot" type="text" name="lot" size="30" placeholder="LOT number" class="input"></td>
             </tr>
             <tr>
-              <td colspan="2"><input type="text" name="box" size="30" class="input" placeholder="Kit Box Name" id="box"> </td>
+              <td colspan="2"><Label>Outer Box Name</label><input type="text" name="box" size="30" class="input" placeholder="Kit Box Name" id="box"> </td>
             </tr>
             <tr>
-              <td colspan="2"><select name="assembler" id="assembler" class="input"></span> 
-                  <option value="">Assembled By</option>
+              <td colspan="2"><label>Assembled By</label> <select name="assembler" id="assembler" class="input">
+                <option value=""></option>
                   <option value="Assembled by Sirane, Stafford Park 6, Telford TF3 3A">Sirane</option>
                   <option value="Assembed by MedDX Services Ltd, Unit 2, Newtons Court, Crossways Businss Park, Dartford, Kent, DA2 6QL">Meddx (Dartford)</option>
                 </select></td>
             </tr>
             <tr>
-              <td colspan="2"><select name="office" id="office" class="input"></span> 
-                  <option value="">Office Address</option>
+             <label>Thriva Office</label><select name="office" id="office" class="input">
+              
                   <option value="Thriva Limited, 6th Floor Classic House, 174-180 Old Street, London, EC1V 9BP">Old Street</option>
                 </select></td>
             </tr>
             <tr>
-              <td colspan="2"><input type="text" name="ifu" size="30" placeholder="Instructions/IFU Name" class="input" id="ifu" required></td>
+              <td colspan="2"><Label>IFU/Instructions name</label><input type="text" name="ifu" size="30" placeholder="Instructions/IFU Name" class="input" id="ifu" ></td>
             </tr>
             <tr>
-              <td colspan="2">        <select name="ce" id="ce" class="input">
-                  <option value="">CE Marked?</option>
+              <td colspan="2"> <label>CE Marked?</label>       <select name="ce" id="ce" class="input">
                   <option value="addce">Yes</option>
                   <option value="">No</option>
                 </select></td>
             </tr>
             <tr>
-              <td colspan="2"><select name ="return-lab" id="returnlab">
-                  <option value="">Return Lab</option>
+              <td colspan="2"><label>Return Lab</label><select name ="return-lab" id="returnlab">
+                <option value=""></option>
                   <option value="County Pathology prepaid UN3373 C5 mailer">County Pathology prepaid UN3373 C5 mailer</option>
                   <option value="Inuvi prepaid UN3373 C5 mailer">Inuvi prepaid UN3373 C5 mailer</option>
                 </select></td>
             </tr>
             <tr>
-              <td colspan="2"><select name ="return-form" id="returnform">
-                  <option value="">Return Form</option>
+              <td colspan="2"><label>Return Form</label><select name ="return-form" id="returnform">
+                  <option value=""></option>
+                  <option value="Thriva return form"></option>
                   <option value="Thriva return form">Thriva Return Form</option>
                   <option value="Return form with adhesive labels">Return form with adhesive labels</option>
                   <option value="Venous return form with adhesive labels">Venous return form with adhesive labels</option>
@@ -69,97 +69,96 @@
                 </select></td>
             </tr>
             <tr>
-              <td><input type="date" id="expiry" name="expiry"
+              <td><label>Expiry Date</label><input type="date" id="expiry" name="expiry"
                 value="2023-01-01"
                 min="2022-01-01" max="2030-12-31"></td>
               <td>Quantity</td>
             </tr>
             <tr>
-              <td><select name="plasters" id="plasters">
-                  <option value="">Plaster Name</option>
+              <td><label>Plasters</label><select name="plasters" id="plasters">
+                <option value=" "></option>
                   <option value="Aero Healthcare plasters ACP203 (CE1639)  ">Aero Healthcare Circle</option>
                   <option value="Nantong City YOJO Medical Products plasters (CE0197)">Thrivaling Plasters</option>
                 </select></td>
               <td><select name="plastersQty" id="plastersQty">
                   <option value="">Qty</option>
                   <option value="x1">x1</option>
-                  <option value=x2">x2</option>
+                  <option value=x2>x2</option>
                   <option value="x3">x3</option>
-                  <option value=x4">x4</option>
+                  <option value=x4>x4</option>
                 </select></td>
             </tr>
             <tr>
-              <td><select name="lancets" id="prick" class="input">
-                  <option value="">Lancet Name</option>
+              <td><label>Lancets</label><select name="lancets" id="prick" class="input">
+                <option value=""></option>
                   <option value="BD contact activated lancet 366594 (CE0050)">BD contact activated lancet 366594 (CE0050)</option>
                   <option value="Haemolance Plus CE 0344">Haemolance Plus CE 0344</option>
                 </select></td>
               <td><select name="lancetsQty" id="lancetsQty">
                   <option value="">Qty</option>
                   <option value="x1">x1</option>
-                  <option value=x2">x2</option>
+                  <option value=x2>x2</option>
                   <option value="x3">x3</option>
-                  <option value=x4">x4</option>
+                  <option value=x4>x4</option>
                 </select></td>
             </tr>
             <tr>
-              <td><select name ="awipe" id="awipe">
-                  <option value="">Alcohol Wipe</option>
+              <td><label>Alcohol Wipe</label><select name ="awipe" id="awipe">
+                <option value=""></option>
                   <option value="Aero Healthcare alcohol wipe AW7100 (CE)">Aero Healthcare alcohol wipe AW7100 (CE) </option>
                 </select></td>
               <td><select name="awipeQty" id="awipeQty">
                   <option value="">Qty</option>
                   <option value="x1">x1</option>
-                  <option value=x2">x2</option>
+                  <option value=x2>x2</option>
                   <option value="x3">x3</option>
-                  <option value=x4">x4</option>
+                  <option value=x4>x4</option>
                 </select></td>
             </tr>
             <tr>
-              <td><select name ="wipe" id="wipe">
-                  <option value="">Wipe</option>
+              <td><label>Additional Wipe</label><select name ="wipe" id="wipe">
+                  <option value=""></option>
                   <option value="Aero Healthcare cleansing wipe AW6100 (CE1639)">Aero Healthcare cleansing wipe AW6100 (CE1639)</option>
                 </select></td>
               <td><select name="wipeQty" id="wipeQty">
                   <option value="">Qty</option>
                   <option value="x1">x1</option>
-                  <option value=x2">x2</option>
+                  <option value=x2>x2</option>
                   <option value="x3">x3</option>
-                  <option value=x4">x4</option>
+                  <option value=x4>x4</option>
                 </select></td>
             </tr>
             <tr>
-              <td><select name ="tube1" id="tube1">
-                  <option value="">Tube #1</option>
+              <td><label>Tube #1</label><select name ="tube1" id="tube1">
+                  <option value=""></option>
                   <option value="BD Microtainer SST Gold 365968 (CE0050)">BD Microtainer SST Gold 365968 (CE0050)</option>
                   <option value="BD Microtainer EDTA Purple 365975 (CE0050)">BD Microtainer EDTA Purple 365975 (CE0050) </option>
                 </select></td>
               <td><select name="tube1Qty" id="tube1Qty">
                   <option value="">Qty</option>
                   <option value="x1">x1</option>
-                  <option value=x2">x2</option>
+                  <option value=x2>x2</option>
                   <option value="x3">x3</option>
-                  <option value=x4">x4</option>
+                  <option value=x4>x4</option>
                 </select></td>
             </tr>
             <tr>
-              <td><select name ="tube2" id="tube2">
-                  <option value="">(no 2nd tube required)</option>
+              <td><label>Tube #2</label><select name ="tube2" id="tube2">
+                  <option value=""></option>
                   <option value="BD Microtainer SST Gold 365968 (CE0050)">BD Microtainer SST Gold 365968 (CE0050)</option>
                   <option value="BD Microtainer EDTA Purple 365975 (CE0050)">BD Microtainer EDTA Purple 365975 (CE0050) </option>
-                  <option value="Gold & Purple">Gold & Purple</option>
                 </select></td>
               <td><select name="tube2Qty" id="tube2Qty">
                   <option value="">Qty</option>
                   <option value="x1">x1</option>
-                  <option value=x2">x2</option>
+                  <option value=x2>x2</option>
                   <option value="x3">x3</option>
-                  <option value=x4">x4</option>
+                  <option value=x4>x4</option>
                 </select></td>
             </tr>
             <tr>
-              <td><select name ="tubeves" id="tubeves">
-                  <option value="">Tube Container</option>
+              <td><label>Tube Vessel</label><select name ="tubeves" id="tubeves">
+                  <option value=""></option>
                   <option value="MedDX tube casing TH068 Clamshell">MedDX tube casing TH068 Clamshell</option>
                   <option value="MedDX tube casing - single">MedDX tube casing - single</option>
                   <option value="MedDX tube casing - double">MedDX tube casing - double</option>
@@ -169,9 +168,9 @@
               <td> <select name="tubeves" id="tubevesQty">
                   <option value="">Qty</option>
                   <option value="x1">x1</option>
-                  <option value=x2">x2</option>
+                  <option value=x2>x2</option>
                   <option value="x3">x3</option>
-                  <option value=x4">x4</option>
+                  <option value=x4>x4</option>
                 </select>
             </tr>
           </tbody>
@@ -183,7 +182,7 @@
 
 
 
-<input type="submit" value="submit" class="button-6" />
+
 
 </form>
 
@@ -209,11 +208,11 @@
   ceimg.src = "./ce.png";
 
   var myForm = document.getElementById('myForm');
-  myForm.addEventListener('submit', function(e)
+  myForm.addEventListener('change', function(e)
     {      context.drawImage(imageObj, 0, 0);
 
     //list values in the form here
-      var sku = document.getElementById('sku').value;
+      var sku = document.getElementById('sku').value.toUpperCase();
       var wipe = document.getElementById('wipe').value;
       var box = document.getElementById('box').value;
       var prick = document.getElementById('prick').value;
@@ -229,12 +228,14 @@
       var assembler = document.getElementById('assembler').value;
       var ce = document.getElementById('ce').value;
       var expiry = document.getElementById('expiry').value;
-      var lot = document.getElementById('lot').value;
+      var lot = document.getElementById('lot').value.toUpperCase();
       var plastersQty = document.getElementById('plastersQty').value;
       var lancetsQty = document.getElementById('lancetsQty').value;
       var awipeQty = document.getElementById('awipeQty').value;
       var wipeQty = document.getElementById('wipeQty').value;
-
+      var tubevesQty = document.getElementById('tubevesQty').value;
+      var tube2Qty = document.getElementById('tube2Qty').value;
+      var tube1Qty = document.getElementById('tube1Qty').value;
 
 
 
@@ -260,18 +261,42 @@
       context.fillText(sku, 7, 58);
       context.font = "lighter 10pt Arial";
       context.fillText(box, 6, 81);
+      if(box.length >=1){
+        context.fillText('x1', 395, 81);
+      }
       context.fillText(prick, 6, 101);
+      context.fillText(lancetsQty, 395, 101);
       context.fillText(ifu, 6, 121);
+      if(ifu.length >=1){
+        context.fillText('x1', 395, 121);
+      }
       context.fillText(plasters, 6, 141);
+      context.fillText(plastersQty, 395, 141);
       context.fillText(awipe, 6, 161);
+      context.fillText(awipeQty, 395, 161);
       context.fillText(wipe, 6, 181);
+      if(wipe.length >=1){
+        context.fillText('x1', 395, 181);
+      }
       context.fillText(returnlab, 6, 202);
-      context.fillText(returnform, 6, 222);
+      if(returnlab.length >=1){
+        context.fillText('x1', 395, 202);
+      }
+      context.fillText(returnform, 6, 224);
+      if(returnform.length >=1){
+        context.fillText('x1', 395, 224);
+      }
       context.fillText(tube1, 6, 244);
+      if(tube1.length >=1){
+        context.fillText(tube1Qty, 395, 244);}
       context.fillText(tube2, 6, 264);
+;
+      
+
 
       if(tube2.length == 0) {
-        context.fillText(tubeves, 6, 264);
+        context.fillText(tubeves, 6, 267);
+        context.fillText(tubevesQty, 395, 267)
         context.font = "bold 11pt Arial";
         context.fillStyle = "white";
         context.fillText("████████████████████████████████████████",2,292)}
@@ -280,7 +305,9 @@
          {
           context.font = "lighter 10pt Arial";
           context.fillStyle = "black";
+          context.fillText(tube2Qty, 395, 264)
            context.fillText(tubeves, 6, 284);
+           context.fillText(tubevesQty, 395, 284)
          }
          context.font = "lighter 8pt Arial";
          context.fillStyle = "black";
